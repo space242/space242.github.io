@@ -1,0 +1,272 @@
+/* banner start */
+.banner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+}
+
+.top-banner,
+.middle-banner,
+.bottom-banner {
+    display: flex;
+    width: 80%;
+    height: 7.5rem;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 134, 134);
+}
+
+.middle-banner {
+    margin-top: -5rem;
+}
+
+.ring {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border: 0.3rem solid transparent;
+    border-radius: 50%;
+}
+
+.ring::before {
+    position: absolute;
+    content: '';
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: purple;
+    top: 0.7rem;
+    left: 0.5rem;
+    border-radius: 50%;
+}
+
+
+.ring1::before {
+    background-color: #24ecff;
+    box-shadow: 0 0 0 0.1rem #24ecff33,
+        0 0 0 0.2rem #24ecff22,
+        0 0 0 0.2rem #24ecff11,
+        0 0 0.2rem #24ecff,
+        0 0 0.2rem #24ecff;
+}
+
+.ring2::before {
+    background-color: #000b0c;
+    box-shadow: 0 0 0 0.1rem #000b0c33,
+        0 0 0 0.2rem #000b0c22,
+        0 0 0 0.2rem #000b0c11,
+        0 0 0.2rem #000b0c,
+        0 0 0.2rem #000b0c;
+}
+
+.ring3::before {
+    background-color: #ec14f8;
+    box-shadow: 0 0 0 0.1rem #ec14f833,
+        0 0 0 0.2rem #ec14f822,
+        0 0 0 0.2rem #ec14f811,
+        0 0 0.2rem #ec14f8,
+        0 0 0.2rem #ec14f8;
+}
+
+.ring4::before {
+    background-color: #dfdb11;
+    box-shadow: 0 0 0 0.1rem #dfdb1133,
+        0 0 0 0.2rem #dfdb1122,
+        0 0 0 0.2rem #dfdb1111,
+        0 0 0.2rem #dfdb11,
+        0 0 0.2rem #dfdb11;
+}
+
+.ring5::before {
+    background-color: #93ff2d;
+    box-shadow: 0 0 0 0.1rem #93ff2d33,
+        0 0 0 0.2rem #93ff2d22,
+        0 0 0 0.2rem #93ff2d11,
+        0 0 0.2rem #93ff2d,
+        0 0 0.2rem #93ff2d;
+}
+
+
+.ring1 {
+    border: 0.3rem solid rgb(0, 125, 190);
+    animation: rotate1 2.8s linear infinite;
+}
+
+.ring2 {
+    border: 0.3rem solid rgb(0, 0, 0);
+    margin-left: -1rem;
+    animation: rotate2 3s linear infinite;
+}
+
+.ring3 {
+    border: 0.3rem solid rgb(255, 11, 61);
+    margin-left: -1rem;
+    animation: rotate1 2.5s linear infinite;
+}
+
+.ring4 {
+    border: 0.3rem solid rgb(255, 173, 36);
+    animation: rotate1 1.8s linear infinite;
+}
+
+.ring5 {
+    border: 0.3rem solid rgb(0, 169, 90);
+    animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bottom-banner {
+    height: 3rem;
+    line-height: 3rem;
+    font-family: consolas;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.bottom-banner>div {
+    padding: 0 0.1rem;
+}
+
+.banner-point1 {
+    animation: changeFont1 3s linear infinite;
+    font-size: 1.5rem;
+}
+
+.banner-point2 {
+    font-size: 1.5rem;
+    animation: changeFont1 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.banner-point3 {
+    font-size: 1.5rem;
+    animation: changeFont1 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes changeFont1 {
+    0% {
+        color: rgb(241, 236, 236);
+    }
+
+    50% {
+        color: rgb(241, 236, 236, .1);
+    }
+
+    100% {
+        color: rgb(241, 236, 236);
+    }
+}
+
+/* banner end */
+
+/* aboutme common start */
+.aboutme-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, rgb(201, 206, 223));
+}
+
+.aboutmetitle {
+    text-align: center;
+    letter-spacing: .3rem;
+    line-height: 3rem;
+    color: rgb(139, 202, 228);
+}
+
+.aboutmecontent table {
+    font-size: 0.8rem;
+    border-collapse: collapse;
+}
+
+.aboutmecontent tr {
+    border: 0.1rem solid transparent;
+}
+
+.aboutmecontent tr:nth-child(odd) {
+    color: #fff;
+    background: rgb(45, 124, 45, .3);
+    text-shadow: 0 0 10px #69e0ff;
+}
+/* aboutme common end */
+
+/* myresearch common start */
+.myresearch-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, rgb(201, 206, 223));
+}
+.myresearchtitle {
+    text-align: center;
+    letter-spacing: .3rem;
+    line-height: 3rem;
+    color: rgb(139, 202, 228);
+}
+/* myresearch common end */
+
+/* myhobby common start */
+.myhobby-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, rgb(5, 5, 5));
+}
+.myhobbytitle {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    line-height: 3rem;
+    color: rgb(41, 41, 43);
+    padding: 1rem 0;
+}
+/* myhobby common end */
+
+/* myidol common start */
+.myidol-container {
+    width: 100%;
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 249, 250);
+}
+.myidol-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.myidol-title h3 {
+    letter-spacing: 0.1rem;
+}
+.myidol-title small {
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    color: rgb(255, 167, 135);
+}
+/* myidol common end */
